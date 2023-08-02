@@ -1,0 +1,529 @@
+<html>
+
+<head>
+    <title>Where To Go - Travel SouthIndia</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Favicon.png">
+    <link rel="stylesheet" href="CSS/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widthdevice-width, initial-scale=1,0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <style>
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #more {
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body onload="loading()">
+
+
+    <div class="container-fluid">
+        <div class="header">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="index.html">
+                        <b>Travel<Br>&ensp;<font style="color:aqua">SouthIndia</font></b>
+                    </a>
+                </div>
+                <div class="top-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="places.html">Where To Go</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="Events.html">Cultural Festivals</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title">Anamudi</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./Assets/adams-peak.jpg" alt="Adams Peak" style="width:200px;height:150px">
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="button" onclick="view_modal(1)" class="btn btn-primary" id="viewmore">View
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title">Bandipur National Park</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./Assets/Bundala-1.jpg" alt="Bandipur National Park"
+                                style="width:200px;height:150px">
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="button" onclick="view_modal(2)" class="btn btn-primary" id="viewmore">View
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title"> Tirupathi Tirumala devasthanam</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./Assets/Dambulla%20temple.jpg" alt="Tirupathi Tirumala devasthanam"
+                                style="width:200px;height:150px">
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="button" onclick="view_modal(3)" class="btn btn-primary" id="viewmore">View
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title">Ananta padbhanabha swamy temple</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./Assets/Delft_Temple.jpg" alt="Ananta padbhanabha swamy temple" style="width:200px;height:150px">
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="button" onclick="view_modal(4)" class="btn btn-primary" id="viewmore">View
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title">Jog Falls</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./Assets/Diyaluma%20falls.jpg" alt="Jog Falls" style="width:200px;height:150px">
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="button" onclick="view_modal(5)" class="btn btn-primary" id="viewmore">View
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title">Talakona Waterfall</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./Assets/Rawana%20flls.jpg" alt="Talakona Waterfall"
+                                style="width:200px;height:150px">
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="button" onclick="view_modal(6)" class="btn btn-primary" id="viewmore">View
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-3">
+
+                </div>
+                <div class="col-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5 class="card-title">Viveka Nanda Memorial</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./Assets/Ridee%20viharaya.jpg" alt="Adams Peak" style="width:200px;height:150px">
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="button" onclick="view_modal(7)" class="btn btn-primary" id="viewmore">View
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+
+                </div>
+            </div>
+            <br>
+        </div>
+
+    </div>
+
+
+</body>
+
+<div class="modal" tabindex="-1" id="1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Anamudi</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p>Anamudi peak is one of only three ultra prominent peaks in South India. <br>
+                    It is also the peak with the greatest topographic isolation within India.<br>
+                     It is the highest point in India south of Himalayas. Thus it is known as "Everest of South India".<br>
+                     The peak is not exceptionally dramatic in term of steepness or local relief and is a fault-block mountain.<br>
+                      It is located in the southern region of Eravikulam National Park at the junction of the Cardamom Hills,<br>
+                       the Anaimalai Hills and the Palani Hills. The nearest town is Munnar, at a distance of 13 kilometres <br>
+                       . The easiest route to the summit of Anamudi is a technically easy hike on grass slopes, starting from a <br>
+                       rolling hill plateau with a base elevation of about 2,000 metres (6,600 ft). The north and south slopes <br>
+                       are gentle, while the east and west slopes are steeper, with more difficult rock faces.
+
+                    Anamudi and the Eravikulam National Park surrounding it is home to the largest surviving population of <br>
+                    the Nilgiri tahr (Nilgiritragus hylocrius). Asian elephants, gaur, Bengal tigers, and the Nilgiri marten <br>
+                    (Martes gwatkinsii) are some of the species of animals found here . The Anamudi peak area is also habitat <br>
+                    of a unique frog Raorchestes resplendens. This newly discovered species is located in the Eravikulam <br>
+                    National Park and is restricted to less than three km2 on the summit of Anamudi.The summit of the Anamudi<br>
+                     is vegetated with patches of stunted Kuruna densifolia and Gaultheria fragrantissima (wintergreen), Anaphalis sp.,<br>
+                      Impatiens and some species of Eriocaulon.
+                    <li>Buses- In peak season might be two direct buses from kandy. Otherwise exists local bus from
+                        Hatton. You might be required to change bus in Maskeliya (after around 1.5 hours).
+                    </li>
+                    <li>Train- The nearest train station is Hatton. Then switch to bus, taxi, tuktuk.</li>
+                    <li>Taxi- Depending on your negotiation skills, a taxi (7 seats) around LKR2000-3000.</li>
+                    <li>TukTuk- Depending on your negotiation skills. Around LKR600.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="2">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Bandipur National Park</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p>Bandipur National Park is a national park covering 868.63 km2 (335.38 sq mi) in Chamarajnagar
+                     district in the Indian state of Karnataka.It was established as a tiger reserve under Project 
+                     Tiger in 1973.[1] It is part of the Nilgiri Biosphere Reserve since 1986.
+                    Best time to visit is September to March: during this period, migratory birds arrive at the park.
+                    The ecological areas of the national park contain seven terrestrial habitat types and six wetland
+                    types. A total of 383 plant species belonging to 90 families have been recorded from the park. In
+                    the small degraded patch of mangrove found at the Bundala lagoon area, black mangrove trees are
+                    widespread.  The Bandipur National Park has been identified as an
+                    outstanding Important Bird Area in the South Indian wetlands. 324 species of
+                    vertebrates have been recorded in the national park, which include 32 species of fish, 15 species of
+                    amphibians, 48 species of reptiles, 197 species of birds and 32 species of mammals. 52 species of
+                    butterflies are among the invertebrates. The wetland habitats in Bundala harbors about 100 species
+                    of water birds, half of them being migrant birds. Of 197 avifaunal species 58 are migratory species.
+                    A few Asian elephants still inhabit the forests of Bundala. Other mammals seen in the park are toque
+                    macaque, common langur, jackal, leopard, fishing cat, rusty-spotted cat, mongoose, wild boar, mouse
+                    deer, Indian muntjac, spotted deer, sambar, black-napped hare, Indian pangolin, and porcupine.
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="3">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tirumala Tirupathi Devasthanam</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                Tirumala Tirupati Devasthanams (TTD) is an independent trust which manages the temples including the 
+                Tirumala Venkateswara Temple  in Andhra Pradesh. The trust oversees the operations and finances of the
+                 richest and the most visited religious center in the world.It is also involved in various social, religious, 
+                 literary and educational activities. TTD is headquartered at Tirupati and employs about 16,000 people.
+                 TTD was established in 1932 as a result of the TTD Act of 1932. According to the act administration of the
+                temple was vested in a  committee of seven members and overseen by a paid commissioner appointed by the
+                Madras Government. Advising the committee were two advisory councils one composed of priests and temple 
+                administrators to aid the committee with the operations of the Tirumala temple, and another composed of
+                farmers for advice on Tirumala's land and estate transactions.
+                The Andhra Pradesh Charitable and Hindu Religious Institution and Endowments Act (1969), sections 85 to 91, 
+                expanded the provisions of TTD. The number of trustees was expanded from five to eleven with compulsory 
+                representation from certain communities. Apart from the responsibilities defined in the previous act,
+                 Devasthanam was obliged to promote the study of Indian languages and propagate Hindu Dharma by research, 
+                 teaching, training and literature creation.
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="4">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Anantha Padmanabha swamy Temple</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p>The Shree Padmanabhaswamy Temple is a Hindu temple located in Thiruvananthapuram, the capital of the state of Kerala, India. 
+                    It is widely considered as the world's richest Hindu temple.[1] The name of the city of 'Thiruvananthapuram' in Malayalam
+                     and Tamil translates to "The City of Ananta" (Ananta being a form of Vishnu).[2] The temple is built in an intricate 
+                     fusion of the Kerala style and the Dravidian style of architecture, featuring high walls, and a 16th-century gopura.
+                      While as per some traditions the Ananthapura temple in Kumbla in Kasaragod district in Kerala is considered as the 
+                      original spiritual seat of the deity ("Moolasthanam"), architecturally to some extent,
+                     the temple is a replica of the Adikesava Perumal temple in Thiruvattar in Kanyakumari district in Tamil Nadu.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="5">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Jog Falls</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p> Jog Falls is a waterfall on the Sharavati river located in the Western Ghats in Shimoga district of Karnataka, India.
+                     It is the third highest plunge waterfall in India. It is a segmented waterfall which depends on rain and season to become 
+                     a plunge waterfall. The falls are major attractions for tourists and is ranked 36th in the list of free-falling waterfalls,
+                      490th in the world by list of waterfalls by total height, 128th in the list of single-drop waterfalls in the World by
+                     the waterfall database.Jog Falls is created by the Sharavati river dropping 253 m (830 ft), making it the third-highest 
+                     waterfall in India after the Nohkalikai Falls with a drop of 335 m (1,099 ft) in Meghalaya[10] and the Dudhsagar Falls with
+                      a drop of 310 m (1,020 ft) in Goa.Sharavathi, a river which rises at Ambutirtha, next to Nonabur, in the Thirthahalli taluk
+                       takes a northwesterly course by Fatte petta, receives the Haridravati on the right below Pattaguppe and the Yenne Hole on the
+                        left above Barangi. Then, it bends to the west, precipitates itself down the Jog Falls (aka Gersoppa Falls), and passes the 
+                        village of Gersoppa (properly Geru-Sappe), which is some 30 kilometres (19 mi) away, discharging into the Arabian Sea at Honnavar in Uttara Kannada.
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="6">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Talakona Waterfall</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p>Talakona is situated in Tirupati district of Andhra Pradesh, India. It is a resort with waterfalls,
+                     dense forests and wildlife. Talakona waterfall is in Sri Venkateswara National Park, Tirupati district 
+                     of Andhra Pradesh. With a 270 feet (82 m)-fall, Talakona is the highest waterfall in Andhra Pradesh state.
+                     Talakona is also known for the Lord Siddheswara Swamy Temple, which is located close to the waterfall.
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" tabindex="-1" id="7">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Viveka Nanda Rock Memorial</h5>
+                <!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+                <p>Vivekananda Rock Memorial is a monument and popular tourist attraction in Kanyakumari, India's southernmost tip.
+                     The memorial stands on one of the two rocks located about 500 meters off mainland of Vavathurai. It was built in
+                      1970 in honour of Swami Vivekananda, who is said to have attained enlightenment on the rock. According to legends,
+                       it was on this rock that Goddess Kanyakumari (Parvathi) performed tapas in devotion of lord Shiva. A meditation 
+                       hall known as Dhyana Mandapam is also attached to the memorial for visitors to meditate. The design of the mandapa 
+                       incorporates different styles of temple architecture from all over India.The rocks are surrounded by the Laccadive Sea 
+                       where the three oceans Bay of Bengal, the Indian Ocean and the Arabian Sea meets. 
+                    The memorial consists of two main structures, the Vivekananda Mandapam and the Shripada Mandapam.
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<footer class="site-footer" style="background-color: #343a40; padding-top: 0px; padding-bottom: 0px;">
+    <br>
+    <div class="row">
+        <div class="col-2" style="text-align: right">
+            <img src="Assets/Favicon.png" style="height: auto; width: 40%">
+        </div>
+        <div class="col-6" style="text-align: left">
+            <h3 style="font-family: Lobster; font-size: 60px; color: #00B895;">Travel SouthIndia</h3>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-4" style="text-align: left">
+                    <ul class="footer-links">
+                        <li><a href="index.html" id="footerlink">Home</a></li>
+                        <li><a href="places.html" id="footerlink">Where To Go</a></li>
+                        <li><a href="hotels.html" id="footerlink">Hotels</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4" style="text-align: left">
+                    <ul class="footer-links">
+                        <li><a href="Events.html" id="footerlink">Cultural Festivals</a></li>
+                    
+                        <li><a href="about.html" id="footerlink">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="row" style="text-align: right;">
+                <img src="Assets/social/facebook.png" id="footericon">
+                <img src="Assets/social/whatsapp.png" id="footericon">
+                <img src="Assets/social/instagram.png" id="footericon">
+                <img src="Assets/social/twitter.png" id="footericon">
+                <img src="Assets/social/youtube.png" id="footericon">
+
+            </div>
+        </div>
+
+
+    </div>
+    <hr style="color: white">
+    <div class="row">
+        <div class="col-12" style="text-align: center">
+            <p class="copyright-text" id="footerlink">Copyright &copy; 2022 All Rights Reserved by
+                <a href="index.html" id="footerlink">Travel SouthIndia</a>.
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+<script>
+    var adamspeek = new bootstrap.Modal(document.getElementById('1'), 'focus');
+    var bundala = new bootstrap.Modal(document.getElementById('2'), 'focus');
+    var dambulla = new bootstrap.Modal(document.getElementById('3'), 'focus');
+    var delft = new bootstrap.Modal(document.getElementById('4'), 'focus');
+    var diyaluma = new bootstrap.Modal(document.getElementById('5'), 'focus');
+    var rawana = new bootstrap.Modal(document.getElementById('6'), 'focus');
+    var ridee = new bootstrap.Modal(document.getElementById('7'), 'focus');
+
+    function loading() {
+        adamspeek.hide();
+        bundala.hide();
+        dambulla.hide();
+        delft.hide();
+        diyaluma.hide();
+        rawana.hide();
+        ridee.hide();
+    }
+
+    function view_modal(id) {
+        if (id == 1) {
+            adamspeek.show();
+        }
+        if (id == 2) {
+            bundala.show();
+        }
+        if (id == 3) {
+            dambulla.show();
+        }
+        if (id == 4) {
+            delft.show();
+        }
+        if (id == 5) {
+            diyaluma.show();
+        }
+        if (id == 6) {
+            rawana.show();
+        }
+        if (id == 7) {
+            ridee.show();
+        }
+
+    }
+</script>
+
+</html>
